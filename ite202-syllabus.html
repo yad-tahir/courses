@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-08-26 Mon 22:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ITE202 - IT Systems</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+			 margin-bottom: .2em; }
+  .subtitle { text-align: center;
+			  font-size: medium;
+			  font-weight: bold;
+			  margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+			padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+	border: 1px solid #ccc;
+	box-shadow: 3px 3px 3px #eee;
+	padding: 8pt;
+	font-family: monospace;
+	overflow: auto;
+	margin: 1.2em;
+  }
+  pre.src {
+	position: relative;
+	overflow: visible;
+	padding-top: 1.2em;
+  }
+  pre.src:before {
+	display: none;
+	position: absolute;
+	background-color: white;
+	top: -10px;
+	right: 10px;
+	padding: 3px;
+	border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+	   in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+	 ob-shell.el: ob-shell is the only babel language using a lambda to put
+	 the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+	 (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+	padding: 10px;
+	border: 2px solid gray;
+	margin: 10px;
+	background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+	{ font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+	{ background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+	 elem.cacheClassElem = elem.className;
+	 elem.cacheClassTarget = target.className;
+	 target.className = "code-highlighted";
+	 elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+	 elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+	 target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">ITE202 - IT Systems
+<br />
+<span class="subtitle">AUIS - Department of Information Technology</span>
+</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf60d6a4">1. Course Information</a></li>
+<li><a href="#orge4ffaf5">2. Instructor Information</a></li>
+<li><a href="#orgb27605a">3. Course Description</a></li>
+<li><a href="#org45b80a3">4. Course Objectives:</a></li>
+<li><a href="#org4ae2fc5">5. Learning Outcomes:</a></li>
+<li><a href="#org927c098">6. Course Goals</a></li>
+<li><a href="#org1cd01e0">7. Materials and Access</a>
+<ul>
+<li><a href="#orgd96f1db">7.1. Slides</a></li>
+<li><a href="#org67c57ee">7.2. Required Software</a></li>
+</ul>
+</li>
+<li><a href="#orgd28d4bc">8. Grading Procedures</a></li>
+<li><a href="#org550b2ae">9. Grading Scale</a></li>
+<li><a href="#org9fe28d6">10. Attendance policy</a></li>
+<li><a href="#org2536692">11. Course Policies and Expectations</a>
+<ul>
+<li><a href="#org55e26af">11.1. Classroom Conduct</a></li>
+<li><a href="#orgf523072">11.2. Office Hours</a></li>
+<li><a href="#orgd17f87e">11.3. Makeup Exams and Extra Credit Policy</a></li>
+<li><a href="#org3421cb0">11.4. Expectations of Student Time</a></li>
+<li><a href="#org7568bea">11.5. Late or Missed Submissions</a></li>
+<li><a href="#org4d83192">11.6. Grade Disputes</a></li>
+<li><a href="#orge8d36b0">11.7. Moodle</a></li>
+</ul>
+</li>
+<li><a href="#org6c029b2">12. Academic Integrity</a></li>
+<li><a href="#org8930eb5">13. Revisions to the Syllabus</a></li>
+<li><a href="#org33632c6">14. Course Schedule</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf60d6a4" class="outline-2">
+<h2 id="orgf60d6a4"><a id="ID-d4f64293-3585-456b-be53-04760680dcb7"></a><span class="section-number-2">1</span> Course Information</h2>
+<div class="outline-text-2" id="text-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Course ID</td>
+<td class="org-left">ITE202</td>
+</tr>
+
+<tr>
+<td class="org-left">Course Title</td>
+<td class="org-left">IT Systems</td>
+</tr>
+
+<tr>
+<td class="org-left">Course Level</td>
+<td class="org-left">Undergraduate</td>
+</tr>
+
+<tr>
+<td class="org-left">Course Design</td>
+<td class="org-left">Required for all IT, SE major/minor students</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">General elective for the rest</td>
+</tr>
+
+<tr>
+<td class="org-left">Number of Credits</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">Prerequisites</td>
+<td class="org-left">CSC101</td>
+</tr>
+
+<tr>
+<td class="org-left">Class Location</td>
+<td class="org-left">&lt;TBD&gt;</td>
+</tr>
+
+<tr>
+<td class="org-left">Meeting Time</td>
+<td class="org-left">Mondays from 8:00 to 9:30 (Section 1)</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Mondays from 9:45 to 11:15 (Section 2)</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Wednesdays from 8:00 to 9:30 (Section 1)</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Wednesdays from 9:45 to 11:15 (Section 2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orge4ffaf5" class="outline-2">
+<h2 id="orge4ffaf5"><a id="ID-fd9f8e35-c977-49f8-a069-94228c37332f"></a><span class="section-number-2">2</span> Instructor Information</h2>
+<div class="outline-text-2" id="text-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Instructor</td>
+<td class="org-left">Yad Tahir, PhD</td>
+</tr>
+
+<tr>
+<td class="org-left">Email Address</td>
+<td class="org-left">yad.tahir@auis.edu.krd</td>
+</tr>
+
+<tr>
+<td class="org-left">Office Location</td>
+<td class="org-left">B-F2-15</td>
+</tr>
+
+<tr>
+<td class="org-left">Office Hours</td>
+<td class="org-left">Sundays from 10:30 to 11:30</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Thursdays from 10:30 to 11:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb27605a" class="outline-2">
+<h2 id="orgb27605a"><a id="ID-c9755b47-8951-4f03-b42f-77d82ffef161"></a><span class="section-number-2">3</span> Course Description</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+This course introduces students to concepts of Information and Communication Technologies. ICT’s key components for transforming data into information i.e. (Programming, Databases, Principles, DBMS and types). It also covers technologies required to transfer this information via World Wide Web i.e. (Networks and Networking technologies). This course is designed in such a way that helps students to make decisions regarding their major and minor selection based on realistic experience with the discipline and level of expectations. Therefore, this course works as an entry, rigorous, and filtering course to all other IT courses and as a prerequisite to all other IT courses.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org45b80a3" class="outline-2">
+<h2 id="org45b80a3"><span class="section-number-2">4</span> Course Objectives:</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Classify a problem and define computing requirements appropriate to its solution. [Knowledge],[Comprehension]</li>
+<li>Apply knowledge of current techniques, skills, and tools necessary to support best computing practices within the Information Technology field. [Application]</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4ae2fc5" class="outline-2">
+<h2 id="org4ae2fc5"><span class="section-number-2">5</span> Learning Outcomes:</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Upon successful completion of this course, students will be able to:
+</p>
+<ul class="org-ul">
+<li>Recognize the components of IT systems.</li>
+<li>Identify the functions, roles and benefits of IT in the global business arena.</li>
+<li>Demonstrate an understanding of basic programming concepts including data types, variables, parameters, and program control structures etc.</li>
+<li>Explain basic database concepts including various data models, entities, attributes, relationships, and constraints.</li>
+<li>Explain core principles of networking technologies i.e. (OSI, TCP/IP, IPs etc)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org927c098" class="outline-2">
+<h2 id="org927c098"><span class="section-number-2">6</span> Course Goals</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Upon successful completion of the course, the students will be able to:
+</p>
+<ul class="org-ul">
+<li>Appreciate the local and global impact of computing on individuals, organizations, and society. [Affective Domain]</li>
+<li>Recognize and appreciate the need to engage in continuing professional development. [Analysis][Affective Domain]</li>
+<li>Collaborate effectively on teams to complete a common goal. [Synthesis]</li>
+<li>Communicate effectively, using verbal and/or written mediums, with a range of audiences. [Synthesis]</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1cd01e0" class="outline-2">
+<h2 id="org1cd01e0"><a id="ID-0517e111-2472-4e3d-b182-f9d9554064e0"></a><span class="section-number-2">7</span> Materials and Access</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Important material from the text and outside sources will be covered during our scheduled class meetings. Regular attendance and in-class note-taking are critical. This course requires a lot of time, effort and energy. Students are strongly encouraged to <b>do background reading before and after</b> each class to gain a better grasp of the material. Corresponding chapters for each lecture will be indicated. The primary references are:<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Title</td>
+<td class="org-left">Starting Out with Programming Logic and Design - 4th Edition</td>
+</tr>
+
+<tr>
+<td class="org-left">Author(s)</td>
+<td class="org-left">Tony Gaddis</td>
+</tr>
+
+<tr>
+<td class="org-left">Publisher</td>
+<td class="org-left">Pearson</td>
+</tr>
+
+<tr>
+<td class="org-left">ISBN</td>
+<td class="org-left">978-0133985078</td>
+</tr>
+
+<tr>
+<td class="org-left">URL</td>
+<td class="org-left"><a href="https://amzn.to/2KVUhtE">https://amzn.to/2KVUhtE</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Title</td>
+<td class="org-left">Information Technology: Principles, Practices, and Opportunities - 3rd Edition</td>
+</tr>
+
+<tr>
+<td class="org-left">Author(s)</td>
+<td class="org-left">James A. Senn</td>
+</tr>
+
+<tr>
+<td class="org-left">Publisher</td>
+<td class="org-left">Prentice Hall</td>
+</tr>
+
+<tr>
+<td class="org-left">ISBN</td>
+<td class="org-left">978-0131436268</td>
+</tr>
+
+<tr>
+<td class="org-left">URL</td>
+<td class="org-left"><a href="https://amzn.to/2ZoQEAx">https://amzn.to/2ZoQEAx</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Title</td>
+<td class="org-left">Java How to Program – Late Objects, Global Edition, 10th Edition</td>
+</tr>
+
+<tr>
+<td class="org-left">Author(s)</td>
+<td class="org-left">Harvey and Paul Deitel</td>
+</tr>
+
+<tr>
+<td class="org-left">Publisher</td>
+<td class="org-left">Pearson</td>
+</tr>
+
+<tr>
+<td class="org-left">ISBN</td>
+<td class="org-left">978-0132575652</td>
+</tr>
+
+<tr>
+<td class="org-left">URL</td>
+<td class="org-left"><a href="https://amzn.to/2Ny202X">https://amzn.to/2Ny202X</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+
+</p>
+
+<p>
+Most of the material discussed in this course are well-explained in the titles above. These references are optional and can be replaced by any other online sources as long as the required topics are covered.
+</p>
+</div>
+
+<div id="outline-container-orgd96f1db" class="outline-3">
+<h3 id="orgd96f1db"><a id="ID-2b1e8a21-a343-4593-9b64-576a1c210523"></a><span class="section-number-3">7.1</span> Slides</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+The PPT slides of this course are designed to assist the instructor <b>only</b>. They contain very limited information. Thus, relying merely on the slides is <b>NOT</b> sufficient to this course.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org67c57ee" class="outline-3">
+<h3 id="org67c57ee"><a id="ID-26e11a6f-0968-48ca-bc69-ef0f3145ab1f"></a><span class="section-number-3">7.2</span> Required Software</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+Students are required to use the following software:
+</p>
+<ul class="org-ul">
+<li>Java Development Kit (JDK) 8 or higher.</li>
+<li>MySQL as a backend database server.</li>
+<li>A Java IDE such as Eclipse or NetBeans.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd28d4bc" class="outline-2">
+<h2 id="orgd28d4bc"><a id="ID-4a521591-5b81-4888-8df7-411802c471cd"></a><span class="section-number-2">8</span> Grading Procedures</h2>
+<div class="outline-text-2" id="text-8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left"><b>Assessment Type</b></th>
+<th scope="col" class="org-right"><b>Grade %</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Multiple Quizzes</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Course Activities</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">2 Coursework Assignments (randomly chosen from out of 4)</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">2 Periodic Exams (20% each)</td>
+<td class="org-right">40</td>
+</tr>
+
+<tr>
+<td class="org-left">Comprehensive Final Exam [a]</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total</b></td>
+<td class="org-right"><b>100</b></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+[a] The final exam for students with grade of <b>60+</b> is optional. They can choose to scale up their portfolio grade by 25%.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org550b2ae" class="outline-2">
+<h2 id="org550b2ae"><a id="ID-cafb8364-534a-4f03-b885-8b6315dd9dcd"></a><span class="section-number-2">9</span> Grading Scale</h2>
+<div class="outline-text-2" id="text-9">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-left">(4.0)</td>
+<td class="org-left">93 - 100</td>
+<td class="org-left">Superior</td>
+</tr>
+
+<tr>
+<td class="org-left">A -</td>
+<td class="org-left">(3.7)</td>
+<td class="org-left">90 - 92</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">B +</td>
+<td class="org-left">(3.3)</td>
+<td class="org-left">87 - 89</td>
+<td class="org-left">Good</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">(3.0)</td>
+<td class="org-left">83 - 86</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">B -</td>
+<td class="org-left">(2.7)</td>
+<td class="org-left">80 - 82</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">C +</td>
+<td class="org-left">(2.3)</td>
+<td class="org-left">77 - 79</td>
+<td class="org-left">Satisfactory</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">(2.0)</td>
+<td class="org-left">73 - 76</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">C -</td>
+<td class="org-left">(1.7)</td>
+<td class="org-left">70 - 72</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">D +</td>
+<td class="org-left">(1.3)</td>
+<td class="org-left">67 - 69</td>
+<td class="org-left">Unsatisfactory</td>
+</tr>
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">(1.0)</td>
+<td class="org-left">60 - 66</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">(0)</td>
+<td class="org-left">Below 60</td>
+<td class="org-left">Fail</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org9fe28d6" class="outline-2">
+<h2 id="org9fe28d6"><a id="ID-9960bc7a-591b-4c87-9742-ac2903e809bc"></a><span class="section-number-2">10</span> Attendance policy</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+Students are expected to attend all scheduled classes, arrive on time, and remain in class until dismissed. Tardiness and early departure are disruptive for students and the teacher and are unacceptable. Attendance will be taken at the beginning of each class.
+</p>
+
+<p>
+As per university policy for classes that meet <b>two</b> times a week at the <b>sixth</b> absence the student will be dismissed from the course with a grade of <b>F</b>. This cutoff is <b>absolute</b>. Per university policy as stated in the Academic Catalog, there are no excused absences. At the penultimate absence, the professor must notify students via e-mail that they are in danger of failing the course, with a copy to the Dean of Students.
+</p>
+</div>
+</div>
+<div id="outline-container-org2536692" class="outline-2">
+<h2 id="org2536692"><a id="ID-967932b7-87c2-4286-bfb1-62e57f671c77"></a><span class="section-number-2">11</span> Course Policies and Expectations</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org55e26af" class="outline-3">
+<h3 id="org55e26af"><a id="ID-9c767c41-e6ab-421c-aa95-0470a7e43cae"></a><span class="section-number-3">11.1</span> Classroom Conduct</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+In this course, a premium is placed on listening, discussion, and participation. These sorts of activities are only possible in a classroom where the person speaking is accorded respect. In short, we all should listen to the one person who is speaking.
+</p>
+
+<p>
+Students are expected to behave in a collegial manner at all times when in class. Rude, disrespectful, aggressive, or threatening language or behavior will not be tolerated, and students displaying this will be removed from class. Attire should be appropriate for university students. Distracting behavior will not be tolerated, and students behaving in this way will be asked to leave the class. Examples of distracting behavior include:
+</p>
+<ul class="org-ul">
+<li>Speaking languages other than English</li>
+<li>Using a cell phone in any way, shape or form</li>
+<li>Any other behavior which a student is warned against during class</li>
+</ul>
+
+<p>
+Professionalism and ethical behavior are expected from students. Your instructor is not an encyclopedia, nor this course encourages memorization. Instead, this course aims to develop a deep understanding of the material. Students conduct should be guided by the AUIS Honor Code and the AUIS Academic Catalogue (both available online at www.auis.edu.krd).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf523072" class="outline-3">
+<h3 id="orgf523072"><a id="ID-08542b5a-e0e3-400d-ba3a-599e7fd38e17"></a><span class="section-number-3">11.2</span> Office Hours</h3>
+<div class="outline-text-3" id="text-11-2">
+<p>
+All students are invited to visit the instructor in his office, outside of class time. Apart from office hours, students can <b>make appointments</b> to visit at other times. Visits during office hours may be used to ask questions about the course material and content, clarify assignments or graded tests, explore ideas or topics related to or extending from the course material, and other course-related matters.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd17f87e" class="outline-3">
+<h3 id="orgd17f87e"><a id="ID-6e3e224f-8acb-4a3c-bfe0-229b56ed884e"></a><span class="section-number-3">11.3</span> Makeup Exams and Extra Credit Policy</h3>
+<div class="outline-text-3" id="text-11-3">
+<p>
+There are no makeup exams or extra credit available in this course.
+</p>
+</div>
+</div>
+<div id="outline-container-org3421cb0" class="outline-3">
+<h3 id="org3421cb0"><a id="ID-407ceb8d-3760-4027-9cf0-2042cc2fda5c"></a><span class="section-number-3">11.4</span> Expectations of Student Time</h3>
+<div class="outline-text-3" id="text-11-4">
+<p>
+AUIS adheres to the United States federal definition of a credit hour, as established by the US Department of Education. As a four credit-hour course, you are expected to attend four hours of direct instruction per week, and spend a minimum of eight hours out of class per week in homework, studying, preparing, and otherwise engaging with the material of this course.
+</p>
+</div>
+</div>
+<div id="outline-container-org7568bea" class="outline-3">
+<h3 id="org7568bea"><a id="ID-d975dedc-2414-4d1e-bd39-b35387a9fede"></a><span class="section-number-3">11.5</span> Late or Missed Submissions</h3>
+<div class="outline-text-3" id="text-11-5">
+<p>
+Time-management and the meeting of harsh deadlines are part of the soft skills expected of all AUIS graduates. As a result, students should submit all coursework by the published deadline.
+</p>
+
+<p>
+A coursework submitted within <b>72 hours</b> after the deadline is considered as a <b>late submission</b>. Each student can have <b>two</b> late submissions. A <b>penalty of 25 percentage marks</b> will be applied to each late submission, i.e. the submitted coursework will be graded out of 75%. Any additional late submissions will be awarded a mark of <b>zero</b> and there will be no make-ups offered for missed assignments.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4d83192" class="outline-3">
+<h3 id="org4d83192"><a id="ID-b6695c72-abc2-48fb-8d5c-6d6f14ec7b50"></a><span class="section-number-3">11.6</span> Grade Disputes</h3>
+<div class="outline-text-3" id="text-11-6">
+<p>
+Any questions about a grade earned on an assignment or test should be brought to the instructor. All assignments may be discussed in details during office hours, and any disputes concerning grades may be addressed at that time. If there is a dispute concerning the final grade for the course, students have the right to make a formal grade appeal. Details on this process can be found in the Academic Catalog.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge8d36b0" class="outline-3">
+<h3 id="orge8d36b0"><a id="ID-da257821-cc1b-4816-a34f-1587e498162a"></a><span class="section-number-3">11.7</span> Moodle</h3>
+<div class="outline-text-3" id="text-11-7">
+<p>
+This course has a Moodle site that will be used for announcements and posting extra material. Enrollment is <b>mandatory</b>. Please make sure that you have enrolled yourself into right section. The enrollment code will be provided during our first class meeting.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6c029b2" class="outline-2">
+<h2 id="org6c029b2"><a id="ID-e9c37856-73e2-468d-8dad-3e16c8f74580"></a><span class="section-number-2">12</span> Academic Integrity</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+Academic Integrity is honest behavior in a school setting. Academic integrity is more than the absence of cheating. It is necessary for students to truly learn new skills and develop as human beings. By struggling with her own studies and by making honest mistakes and discoveries, a student learns about the world and herself.  Using another’s work inappropriately prevents this intellectual and emotional growth.
+</p>
+
+<p>
+Academic Dishonesty (i.e, "cheating") is any form of deceit, fraud, or misrepresentation in academic work. Academic dishonesty is the opposite of learning, because it prevents the student-writer from genuinely learning and responding to material. Plagiarism is one of the most serious forms of academic dishonesty.
+</p>
+
+<p>
+Plagiarism is using other people’s ideas and/or words without clearly acknowledging the source of the information. If a student uses content or grammatical structures from the internet, a professional writer, or another student and does not inform the reader, he plagiarizes. A student who allows another student to use his writing without attribution is also guilty of plagiarism.
+</p>
+
+<p>
+Cheating will not be tolerated in this class. All major written assignments completed outside of class time must be submitted via www.turnitin.com. A student found to be cheating for the first time will receive a zero for the assignment and the Dean of Students will be notified. In the event of a second offense confirmed by the Dean of Students, the student will fail the course. A third instance of cheating will result in that student being dismissed from the American University of Iraq, Sulaimani. Students are directed to the AUIS Honor Code and the Academic Integrity policy section of the Academic Catalog (available online at www.auis.edu.krd). These documents provide guidance in cases of academic dishonesty, so we should all be familiar with them.
+</p>
+</div>
+</div>
+<div id="outline-container-org8930eb5" class="outline-2">
+<h2 id="org8930eb5"><a id="ID-3db48b98-d144-411e-90b8-d21881505b74"></a><span class="section-number-2">13</span> Revisions to the Syllabus</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+This syllabus is designed around the course description proposed and announced to the students. It is subject to change. It is the duty of the instructor to inform students of changes in a timely fashion. Students are obliged to be cognizant of any change.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33632c6" class="outline-2">
+<h2 id="org33632c6"><span class="section-number-2">14</span> Course Schedule</h2>
+<div class="outline-text-2" id="text-14">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right"><b>Week</b></th>
+<th scope="col" class="org-left"><b>Starting Date</b></th>
+<th scope="col" class="org-left"><b>Topic</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">September 1, 2019</td>
+<td class="org-left">Introduction</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">September 8, 2019</td>
+<td class="org-left">Concepts of Programming</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">September 15, 2019</td>
+<td class="org-left">Pseudo Code and Control Statements</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">September 22, 2019</td>
+<td class="org-left">Loops</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">September 29, 2019</td>
+<td class="org-left">Methods</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">October 6, 2019</td>
+<td class="org-left">Introduction to Java - Part 1</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Assignment 1 deadline on October 7, at 9 A.M.</b></td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">October 13, 2019</td>
+<td class="org-left">Introduction to Java - Part 2</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Exam 1 on October 14 - During Class Time</b></td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">October 20, 2019</td>
+<td class="org-left">Computer Networks - Part 1</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">October 27, 2019</td>
+<td class="org-left">Computer Networks - Part 2</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Assignment 2 deadline on October 28, at 9 A.M.</b></td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">November 3, 2019</td>
+<td class="org-left">Database Concepts - Part 1</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Assignment 3 deadline on November 4, at 9 A.M.</b></td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">November 10, 2019</td>
+<td class="org-left">Database Concepts - Part 2</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Exam 2 on November 11 - During Class Time</b></td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">November 17, 2019</td>
+<td class="org-left">Operating Systems</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">November 24, 2019</td>
+<td class="org-left">Course Closure</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Assignment 4 deadline on November 25, at 9 A.M.</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2019-08-26 Mon 22:05</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
